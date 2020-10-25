@@ -11,6 +11,177 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-icon" onClick="toggleSide">
+          <i class="fas fa-bars"></i>
+          <div class="navbar__left">
+            <a href="#">Subscribers</a>
+            <a href="#">Video Management</a>
+            <a class="active_link" href="#">Admin</a>
+          </div>
+          <div class="navbar__right">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-clock"></i>
+            </a>
+            <a href="#">
+              <img
+                width="30"
+                src="https://www.flaticon.com/svg/static/icons/svg/2922/2922561.svg"
+                alt="pic"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <div class="main__title">
+            <img src="media/undraw_eco_conscious_1y58.svg" alt="pic" />
+            <div class="main__greeting">
+              <h1>Hello!</h1>
+              <p>Welcome to your admin dashboard</p>
+            </div>
+          </div>
+          <div class="main__cards">
+            <div class="card">
+              <i class="fas fa-user fa-2x text-lightblue"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of Subscribers</p>
+                <span class="font-bold text-title">4.781</span>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fas fa-calendar fa-2x text-red"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Watchtime</p>
+                <span class="font-bold text-title">35.782</span>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fas fa-camera fa-2x text-yellow"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of Videos</p>
+                <span class="font-bold text-title">652</span>
+              </div>
+            </div>
+            <div class="card">
+              <i class="fas fa-thumbs-up fa-2x text-green"></i>
+              <div class="card__inner">
+                <p class="text-primary-p">Number of Likes</p>
+                <span class="font-bold text-title">9.931</span>
+              </div>
+            </div>
+          </div>
+          <div class="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <h1>Daily Report</h1>
+                <p>Seattle, WA, United States of America</p>
+              </div>
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div id="apex1"></div>
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <h1>Monthly Report</h1>
+                <p>Seattle, WA, United States of America</p>
+              </div>
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="charts__right__cards">
+              <div class="card1">
+                <h1>Income</h1>
+                <p>$1,237.74</p>
+              </div>
+              <div class="card2">
+                <h1>Sales</h1>
+                <p>178</p>
+              </div>
+              <div class="card3">
+                <h1>Users</h1>
+                <p>142</p>
+              </div>
+              <div class="card4">
+                <h1>Orders</h1>
+                <p>168</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img src="media/logo.png" alt="logo" />
+            <h1>Reports</h1>
+          </div>
+          <i class="fas fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+        </div>
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fas fa-home"></i>
+            <a href="#">Dashboard</a>
+          </div>
+          <h2>MNG</h2>
+          <div class="sidebar__link">
+            <i class="fas fa-user-secret"></i>
+            <a href="#">Admin Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-building"></i>
+            <a href="#">Company Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-wrench"></i>
+            <a href="#">Employee Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-archive"></i>
+            <a href="#">Warehouse</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-handshake"></i>
+            <a href="#">Contracts</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-question"></i>
+            <a href="#">Requests</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="#">Leave Policy</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-calendar-check"></i>
+            <a href="#">Events</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-phone"></i>
+            <a href="#">Support</a>
+          </div>
+          <h2>PAYROLL</h2>
+          <div class="sidebar__link">
+            <i class="far fa-money-bill-alt"></i>
+            <a href="#">Payroll</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-briefcase"></i>
+            <a href="#">Paygrade</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-power-off"></i>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="index.js"></script>
   </body>
 </html>
