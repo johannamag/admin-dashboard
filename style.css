@@ -289,11 +289,96 @@ main {
   font-size: 14px;
 }
 
+#apex1 {
+  margin-top: 5px;
+}
+
 #sidebar {
-  background: #020509;
+  background: #2e4a66;
   grid-area: sidebar;
   overflow-y: auto;
   padding: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.sidebar__img {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__title > div > img {
+  width: 75px;
+  object-fit: contain;
+}
+
+.sidebar__title > div > h1 {
+  font-size: 18px;
+  display: inline;
+}
+
+.sidebar__title > i {
+  font-size: 18px;
+  display: none;
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: lightblue;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1.2;
+  margin-bottom: 30px;
+}
+
+.sidebar__menu > h2 {
+  color: lightblue;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.sidebar__link {
+  color: #f3f4f6;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.active_menu_link {
+  background: rgba(62, 161, 117, 0.2);
+}
+
+.active_menu_link a {
+  color: #fff !important;
+}
+
+.sidebar__link > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar__link:hover {
+  background: rgba(62, 161, 117, 0.2);
+}
+
+.sidebar__link > i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.sidebar__logout {
+  padding: 10px;
+  color: red;
+}
+
+.sidebar__logout > a {
+  color: red;
+  text-transform: uppercase;
 }
